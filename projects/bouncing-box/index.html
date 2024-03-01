@@ -80,6 +80,7 @@
         }
         if (positionX < 0){
           speed = speed * -1;
+        
         }
             
         }
@@ -94,6 +95,12 @@
           points = points + 1;
           speed = speed + 3;
           changeBoxText(points);
+          if (speed >0){
+            speed = speed + 3;
+          }
+          else if (speed < 0){
+            speed = speed - 3;
+          }
         }
       
       })();
